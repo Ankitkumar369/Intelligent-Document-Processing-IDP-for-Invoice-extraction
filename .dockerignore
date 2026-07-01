@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/output/
+data/input/*.pdf
+*.log
+.git/
+.gitignore
+README.md

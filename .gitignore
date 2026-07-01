@@ -1,0 +1,54 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Data (large files, don't commit)
+data/input/*.pdf
+data/output/json/*.json
+data/output/csv/*.csv
+data/output/excel/*.xlsx
+data/output/rag/*.json
+data/output/logs/*.log
+data/output/logs/*.jsonl
+data/output/logs/*.txt
+
+# Keep folder structure
+!data/input/.gitkeep
+!data/output/json/.gitkeep
+!data/output/csv/.gitkeep
+!data/output/excel/.gitkeep
+!data/output/rag/.gitkeep
+!data/output/logs/.gitkeep
+
+# Environment secrets
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Test artifacts
+quality_check.py
+quality_check2.py
+quality_report.txt
+quality_report2.txt
+*.csv
+!data/output/csv/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker/.env

@@ -1,0 +1,13 @@
+﻿services:
+  idp-api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/input:/app/data/input
+      - ./data/output:/app/data/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
